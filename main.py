@@ -36,7 +36,7 @@ def indir(url):
 
 getPlaylist(anaurl) # get playlist
 if(plistesi):      # if playlist is not empty then you can start to download
-    br = webdriver.Firefox()
+    br = webdriver.Firefox()  # you should install selenium and webdriver for me it is mozilla geckodriver
     br.get(site)
     for i in range(len(plistesi)):
         indir(plistesi[i])
