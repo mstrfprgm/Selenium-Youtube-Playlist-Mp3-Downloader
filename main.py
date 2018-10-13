@@ -38,7 +38,7 @@ getPlaylist(anaurl) # get playlist
 if(plistesi):      # if playlist is not empty then you can start to download
     br = webdriver.Firefox()
     br.get(site)
-    for i in range(17,len(plistesi)):
+    for i in range(len(plistesi)):
         indir(plistesi[i])
     br.close()
 else:
