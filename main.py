@@ -5,7 +5,7 @@ from time import sleep
 from urllib import request
 site = "https://ytmp3.cc/"
 anaurl = "https://www.youtube.com/playlist?list=PL_5mTF6Dw_03VRs0ZGSB6akDzJhxPS-la" # playlist url
-plistesi = []
+plistesi = []  # list that we store every playlist video url
 def getPlaylist(url):  # getting playlist and storing every video link in a list /
     sourceCode = requests.get(url).text
     soup = BeautifulSoup(sourceCode, 'html.parser')
